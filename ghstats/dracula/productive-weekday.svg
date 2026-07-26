@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="200" viewBox="0 0 340 200" font-family="'Segoe UI', Ubuntu, Sans-Serif">
+  <rect x="0.5" y="0.5" width="339" height="199" rx="6" fill="#282a36" stroke="#282a36" stroke-opacity="1.00"/>
+  <text x="20" y="30" font-size="15" font-weight="600" fill="#ff79c6">Commits by Weekday (last year)</text>
+  <line x1="35" y1="45" x2="35" y2="155" stroke="#6272a4"/>
+  <line x1="31" y1="155" x2="35" y2="155" stroke="#6272a4"/>
+  <text x="29" y="158" font-size="10" fill="#6272a4" text-anchor="end">0</text>
+  <line x1="31" y1="142" x2="35" y2="142" stroke="#6272a4"/>
+  <text x="29" y="145" font-size="10" fill="#6272a4" text-anchor="end">10</text>
+  <line x1="31" y1="128" x2="35" y2="128" stroke="#6272a4"/>
+  <text x="29" y="131" font-size="10" fill="#6272a4" text-anchor="end">20</text>
+  <line x1="31" y1="114" x2="35" y2="114" stroke="#6272a4"/>
+  <text x="29" y="117" font-size="10" fill="#6272a4" text-anchor="end">30</text>
+  <line x1="31" y1="100" x2="35" y2="100" stroke="#6272a4"/>
+  <text x="29" y="103" font-size="10" fill="#6272a4" text-anchor="end">40</text>
+  <line x1="31" y1="87" x2="35" y2="87" stroke="#6272a4"/>
+  <text x="29" y="90" font-size="10" fill="#6272a4" text-anchor="end">50</text>
+  <line x1="31" y1="73" x2="35" y2="73" stroke="#6272a4"/>
+  <text x="29" y="76" font-size="10" fill="#6272a4" text-anchor="end">60</text>
+  <line x1="31" y1="59" x2="35" y2="59" stroke="#6272a4"/>
+  <text x="29" y="62" font-size="10" fill="#6272a4" text-anchor="end">70</text>
+  <line x1="31" y1="45" x2="35" y2="45" stroke="#6272a4"/>
+  <text x="29" y="48" font-size="10" fill="#6272a4" text-anchor="end">80</text>
+  <line x1="35" y1="155" x2="325" y2="155" stroke="#6272a4"/>
+  <rect x="35.00" y="87.62" width="36.29" height="67.38" rx="2" fill="#7963a1"><title>Mon — 49 commits</title></rect>
+  <text x="53.14" y="169" font-size="10" fill="#6272a4" text-anchor="middle">Mon</text>
+  <rect x="77.29" y="64.25" width="36.29" height="90.75" rx="2" fill="#7963a1"><title>Tue — 66 commits</title></rect>
+  <text x="95.43" y="169" font-size="10" fill="#6272a4" text-anchor="middle">Tue</text>
+  <rect x="119.57" y="120.62" width="36.29" height="34.38" rx="2" fill="#7963a1"><title>Wed — 25 commits</title></rect>
+  <text x="137.71" y="169" font-size="10" fill="#6272a4" text-anchor="middle">Wed</text>
+  <rect x="161.86" y="86.25" width="36.29" height="68.75" rx="2" fill="#7963a1"><title>Thu — 50 commits</title></rect>
+  <text x="180.00" y="169" font-size="10" fill="#6272a4" text-anchor="middle">Thu</text>
+  <rect x="204.14" y="97.25" width="36.29" height="57.75" rx="2" fill="#7963a1"><title>Fri — 42 commits</title></rect>
+  <text x="222.29" y="169" font-size="10" fill="#6272a4" text-anchor="middle">Fri</text>
+  <rect x="246.43" y="108.25" width="36.29" height="46.75" rx="2" fill="#7963a1"><title>Sat — 34 commits</title></rect>
+  <text x="264.57" y="169" font-size="10" fill="#6272a4" text-anchor="middle">Sat</text>
+  <rect x="288.71" y="56.00" width="36.29" height="99.00" rx="2" fill="#bd93f9"><title>Sun — 72 commits</title></rect>
+  <text x="306.86" y="169" font-size="10" fill="#6272a4" text-anchor="middle">Sun</text>
+</svg>

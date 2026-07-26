@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="200" viewBox="0 0 340 200" font-family="'Segoe UI', Ubuntu, Sans-Serif">
+  <rect x="0.5" y="0.5" width="339" height="199" rx="6" fill="#282a36" stroke="#282a36" stroke-opacity="1.00"/>
+  <text x="20" y="30" font-size="15" font-weight="600" fill="#ff79c6">Streak</text>
+  <text x="56" y="95" font-size="28" font-weight="700" fill="#bd93f9" text-anchor="middle">3</text>
+  <text x="56" y="120" font-size="12" fill="#ffb86c" text-anchor="middle">Current streak</text>
+  <text x="56" y="140" font-size="10" fill="#6272a4" text-anchor="middle">Jul 24 — Jul 26</text>
+  <text x="169" y="95" font-size="28" font-weight="700" fill="#bd93f9" text-anchor="middle">19</text>
+  <text x="169" y="120" font-size="12" fill="#ffb86c" text-anchor="middle">Longest streak</text>
+  <text x="169" y="140" font-size="10" fill="#6272a4" text-anchor="middle">Jul 3 — Jul 21</text>
+  <text x="282" y="95" font-size="28" font-weight="700" fill="#bd93f9" text-anchor="middle">351</text>
+  <text x="282" y="120" font-size="12" fill="#ffb86c" text-anchor="middle">Active days</text>
+  <text x="282" y="140" font-size="10" fill="#6272a4" text-anchor="middle">of 2,033 total (17%)</text>
+</svg>
