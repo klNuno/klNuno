@@ -55,8 +55,12 @@ jobs:
           fetch cards/productive-time.svg \
             "$base/productive-time?username=${{ github.repository_owner }}&utcOffset=2&$PALETTE"
           sleep 10
+          # disable_animations is not cosmetic here. This card starts every
+          # element at opacity 0 and reveals it with a CSS fade, and CSS
+          # animations do not run inside an svg embedded in another svg, so the
+          # animated version renders as an empty rectangle.
           fetch cards/streak.svg \
-            "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&$STREAK_PALETTE"
+            "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&disable_animations=true&$STREAK_PALETTE"
 
       - name: compose
         run: python3 scripts/compose.py

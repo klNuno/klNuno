@@ -28,6 +28,10 @@ def load(name):
     text = raw.decode("utf-8")
     if "ERROR!!!" in text or len(raw) < 2000:
         raise SystemExit(f"{name}: looks like an error card, not composing")
+    # A card that hides itself behind a CSS fade would come out blank, because
+    # animations do not run once the card is embedded in another svg.
+    if "opacity: 0" in text:
+        raise SystemExit(f"{name}: still animated, ask the generator to disable it")
     box = re.search(r"viewBox=['\"]\s*0\s+0\s+([\d.]+)\s+([\d.]+)", text)
     if not box:
         raise SystemExit(f"{name}: no viewBox, refusing to guess its size")
