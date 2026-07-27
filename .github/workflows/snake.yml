@@ -14,13 +14,15 @@ jobs:
     permissions:
       contents: write
     steps:
+      # Same violet ramp as the cards. Only the empty cell differs between the
+      # two files, so the grid stays readable on a white page and on a dark one.
       - uses: Platane/snk@v3
         id: snake
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake.svg?palette=github-light
-            dist/snake-dark.svg?palette=github-dark
+            dist/snake.svg?color_snake=%237c5cff&color_dots=%23ebedf0,%23ddd6fe,%23c4b5fd,%23a78bfa,%237c5cff
+            dist/snake-dark.svg?color_snake=%23a78bfa&color_dots=%23161b22,%232a2145,%234a3480,%237c5cff,%23a78bfa
 
       # the svg files land on a dedicated `output` branch, never on main
       - uses: crazy-max/ghaction-github-pages@v4
