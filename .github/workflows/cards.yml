@@ -1,0 +1,43 @@
+name: cards
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+# Fetches the three cards with the "encre" palette and commits them.
+# The generators only expose custom colours through their hosted URL, never
+# through their Action, so the URL is called here once a day instead of being
+# called by every visitor's browser. curl runs with -f, so a failing service
+# leaves the previous card in place rather than overwriting it with an error page.
+
+env:
+  PALETTE: "bg_color=0b0d12&border_color=1c2130&title_color=a78bfa&text_color=c3c9d6&icon_color=7c5cff&chart_color=7c5cff"
+  STREAK_PALETTE: "background=0b0d12&border=1c2130&stroke=1c2130&ring=a78bfa&fire=a78bfa&currStreakNum=e7e9f0&sideNums=c3c9d6&currStreakLabel=a78bfa&sideLabels=8b93a7&dates=6b7488"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: fetch cards
+        run: |
+          mkdir -p cards
+          base="https://github-profile-summary-cards.vercel.app/api/cards"
+          curl -fsSL --retry 3 --retry-delay 5 -o cards/profile.svg \
+            "$base/profile-details?username=${{ github.repository_owner }}&$PALETTE"
+          curl -fsSL --retry 3 --retry-delay 5 -o cards/productive-time.svg \
+            "$base/productive-time?username=${{ github.repository_owner }}&utcOffset=2&$PALETTE"
+          curl -fsSL --retry 3 --retry-delay 5 -o cards/streak.svg \
+            "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&$STREAK_PALETTE"
+
+      - name: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cards
+          git diff --quiet --cached || git commit -m "chore: refresh cards"
+          git push
