@@ -26,12 +26,36 @@ jobs:
       - name: fetch cards
         run: |
           mkdir -p cards
+          # Both generators answer HTTP 200 with a card that reads "ERROR!!!
+          # Cards are temporarily rate limited." instead of a 4xx, so the status
+          # code proves nothing. The body has to be inspected, and a bad answer
+          # must leave the copy already in the repo alone.
+          fetch() {
+            dest=$1; url=$2
+            for attempt in 1 2 3 4 5; do
+              if curl -fsSL --max-time 30 -o /tmp/card.svg "$url" \
+                 && [ "$(stat -c%s /tmp/card.svg)" -ge 2000 ] \
+                 && ! grep -q 'ERROR!!!' /tmp/card.svg; then
+                mv /tmp/card.svg "$dest"
+                echo "$dest ok on attempt $attempt"
+                return 0
+              fi
+              echo "$dest: attempt $attempt rejected"
+              sleep 30
+            done
+            echo "$dest: giving up, keeping the copy already committed"
+            # Only a genuine failure if there is nothing to fall back on.
+            test -s "$dest"
+          }
+
           base="https://github-profile-summary-cards.vercel.app/api/cards"
-          curl -fsSL --retry 3 --retry-delay 5 -o cards/profile.svg \
+          fetch cards/profile.svg \
             "$base/profile-details?username=${{ github.repository_owner }}&$PALETTE"
-          curl -fsSL --retry 3 --retry-delay 5 -o cards/productive-time.svg \
+          sleep 10
+          fetch cards/productive-time.svg \
             "$base/productive-time?username=${{ github.repository_owner }}&utcOffset=2&$PALETTE"
-          curl -fsSL --retry 3 --retry-delay 5 -o cards/streak.svg \
+          sleep 10
+          fetch cards/streak.svg \
             "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&$STREAK_PALETTE"
 
       - name: compose

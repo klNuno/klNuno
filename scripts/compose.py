@@ -26,6 +26,8 @@ CANVAS = 1000.0
 def load(name):
     raw = CARDS.joinpath(name).read_bytes()
     text = raw.decode("utf-8")
+    if "ERROR!!!" in text or len(raw) < 2000:
+        raise SystemExit(f"{name}: looks like an error card, not composing")
     box = re.search(r"viewBox=['\"]\s*0\s+0\s+([\d.]+)\s+([\d.]+)", text)
     if not box:
         raise SystemExit(f"{name}: no viewBox, refusing to guess its size")
