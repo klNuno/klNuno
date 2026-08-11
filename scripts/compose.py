@@ -28,6 +28,10 @@ def load(name):
     text = raw.decode("utf-8")
     if "ERROR!!!" in text or len(raw) < 2000:
         raise SystemExit(f"{name}: looks like an error card, not composing")
+    # streak-stats answers with a full sized card carrying a sad face when the
+    # GitHub API fails under it, so neither the size nor "ERROR!!!" catches it.
+    if "Failed to retrieve contributions" in text:
+        raise SystemExit(f"{name}: the generator could not read the API, not composing")
     # A card that hides itself behind a CSS fade would come out blank, because
     # animations do not run once the card is embedded in another svg.
     if "opacity: 0" in text:

@@ -30,11 +30,18 @@ jobs:
           # Cards are temporarily rate limited." instead of a 4xx, so the status
           # code proves nothing. The body has to be inspected, and a bad answer
           # must leave the copy already in the repo alone.
+          #
+          # Denying known error strings is not enough: streak-stats draws a full
+          # sized card with a sad face and "Failed to retrieve contributions"
+          # when the GitHub API fails under it, which passes both the size and
+          # the "ERROR!!!" test. Each card therefore has to prove it carries the
+          # text it only ever carries when the data is real.
           fetch() {
-            dest=$1; url=$2
+            dest=$1; url=$2; marker=$3
             for attempt in 1 2 3 4 5; do
               if curl -fsSL --max-time 30 -o /tmp/card.svg "$url" \
                  && [ "$(stat -c%s /tmp/card.svg)" -ge 2000 ] \
+                 && grep -qF "$marker" /tmp/card.svg \
                  && ! grep -q 'ERROR!!!' /tmp/card.svg; then
                 mv /tmp/card.svg "$dest"
                 echo "$dest ok on attempt $attempt"
@@ -50,17 +57,20 @@ jobs:
 
           base="https://github-profile-summary-cards.vercel.app/api/cards"
           fetch cards/profile.svg \
-            "$base/profile-details?username=${{ github.repository_owner }}&$PALETTE"
+            "$base/profile-details?username=${{ github.repository_owner }}&$PALETTE" \
+            "Public Repos"
           sleep 10
           fetch cards/productive-time.svg \
-            "$base/productive-time?username=${{ github.repository_owner }}&utcOffset=2&$PALETTE"
+            "$base/productive-time?username=${{ github.repository_owner }}&utcOffset=2&$PALETTE" \
+            "per day hour"
           sleep 10
           # disable_animations is not cosmetic here. This card starts every
           # element at opacity 0 and reveals it with a CSS fade, and CSS
           # animations do not run inside an svg embedded in another svg, so the
           # animated version renders as an empty rectangle.
           fetch cards/streak.svg \
-            "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&disable_animations=true&$STREAK_PALETTE"
+            "https://streak-stats.demolab.com/?user=${{ github.repository_owner }}&disable_animations=true&$STREAK_PALETTE" \
+            "Total Contributions"
 
       - name: compose
         run: python3 scripts/compose.py
