@@ -1,4 +1,4 @@
-## Projects
+### Projects
 
 - [accshift](https://github.com/klNuno/accshift) - Switch gaming accounts on Windows, macOS, and Linux.
 - [Boite](https://github.com/beboite/boite-legacy) - A terminal workspace for coding agents. (New version is coming soon)
@@ -14,12 +14,16 @@
 - [AlarmeMeian](https://github.com/klNuno/AlarmeMeian) - Manage Meian home alarms from Android.
 - [HEIC to JPG](https://github.com/klNuno/heic-jpg-converter) - Convert HEIC images to JPG.
 
-## Activity
+<br>
 
+<p align="center">
+  <img src="./cards/profile.svg" alt="GitHub contribution history" width="1200">
+</p>
+
+<p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/klNuno/klNuno/output/snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/klNuno/klNuno/output/snake.svg">
-  <img src="https://raw.githubusercontent.com/klNuno/klNuno/output/snake.svg" alt="Contribution snake">
+  <img src="https://raw.githubusercontent.com/klNuno/klNuno/output/snake.svg" alt="Contribution snake" width="1200">
 </picture>
-
-<img src="./cards/profile.svg" alt="GitHub contribution history">
+</p>
