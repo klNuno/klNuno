@@ -8,6 +8,7 @@
 
 ### Small projects
 
+- [Spotivita](https://github.com/klNuno/spotivita) - Play Spotify on the PS Vita, with your library, search, artist pages, and Spotify Connect.
 - [fastpick](https://github.com/beboite/fastpick) - Pick your coding agent, provider, and model from the terminal (+ a roulette if you cannot decide).
 - [fast-mcp-ssh](https://github.com/klNuno/fast-mcp-ssh) - SSH, SFTP, and remote screenshots for AI agents in one Rust binary.
 - [PriceHover](https://github.com/klNuno/PriceHover) - Convert prices to another currency by hovering over them in your browser. (Supporting Crypto soon)
