@@ -1,7 +1,7 @@
 ### Projects
 
 - [accshift](https://github.com/klNuno/accshift) - Switch gaming accounts on Windows, macOS, and Linux.
-- [Boite](https://github.com/beboite/boite-legacy) - A terminal workspace for coding agents. (New version is coming soon)
+- [Boite](https://github.com/beboite/boite) - A terminal workspace for coding agents. ([CLI version (legacy)](https://github.com/beboite/boite-legacy))
 
 
 
