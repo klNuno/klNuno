@@ -2,13 +2,13 @@
 
 - [accshift](https://github.com/klNuno/accshift) - Switch gaming accounts on Windows, macOS, and Linux.
 - [Boite](https://github.com/beboite/boite-legacy) - A terminal workspace for coding agents. (New version is coming soon)
-- [Windows Bagarre](https://github.com/klNuno/windows-bagarre) - Debloat and tune a fresh Windows 11 install for gaming.
 
 
 
 ### Small projects
 
 - [Spotivita](https://github.com/klNuno/spotivita) - Play Spotify on the PS Vita, with your library, search, artist pages, and Spotify Connect.
+- [Windows Bagarre](https://github.com/klNuno/windows-bagarre) - Debloat and tune a fresh Windows 11 install for gaming.
 - [fastpick](https://github.com/beboite/fastpick) - Pick your coding agent, provider, and model from the terminal (+ a roulette if you cannot decide).
 - [fast-mcp-ssh](https://github.com/klNuno/fast-mcp-ssh) - SSH, SFTP, and remote screenshots for AI agents in one Rust binary.
 - [PriceHover](https://github.com/klNuno/PriceHover) - Convert prices to another currency by hovering over them in your browser. (Supporting Crypto soon)
