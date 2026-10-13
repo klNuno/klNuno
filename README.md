@@ -1,10 +1,8 @@
 ### Projects
 
 - [accshift](https://github.com/klNuno/accshift) - Switch gaming accounts on Windows, macOS, and Linux.
-- [Douane](https://github.com/beboite/douane) - Use your AI subscriptions in any coding tool through one self-hosted gateway, with quota-aware routing.
-- [B.O.T.S](https://github.com/beboite/bots) - Desktop robots that follow your Boite agents, handle requests, and run scheduled missions.
 - [Boite](https://github.com/beboite/boite) - A desktop workspace for coding agents, with access from your phone. ([Legacy terminal app](https://github.com/beboite/boite-legacy))
-- [Cortisoff](https://github.com/klNuno/cortisoff) - Automate your desktop with Lua plugins for night light, per-app refresh rate, vibrance, and shortcuts.
+- [Douane](https://github.com/beboite/douane) - Use your AI subscriptions in any coding tool through one self-hosted gateway, with quota-aware routing.
 
 
 
@@ -17,6 +15,8 @@
 - [PriceHover](https://github.com/klNuno/PriceHover) - Convert currency and crypto prices on hover, on selection, or inline in Chrome and Firefox.
 - [AlarmeMeian](https://github.com/klNuno/AlarmeMeian) - Control a Meian alarm by SMS from Android.
 - [HEIC to JPG](https://github.com/klNuno/heic-jpg-converter) - Convert HEIC images to JPG.
+- [B.O.T.S](https://github.com/beboite/bots) - Desktop robots that follow your Boite agents, handle requests, and run scheduled missions.
+- [Cortisoff](https://github.com/klNuno/cortisoff) - Automate your desktop with Lua plugins for night light, per-app refresh rate, vibrance, and shortcuts.
 
 <br>
 
