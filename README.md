@@ -17,6 +17,7 @@
 - [HEIC to JPG](https://github.com/klNuno/heic-jpg-converter) - Convert HEIC images to JPG.
 - [B.O.T.S](https://github.com/beboite/bots) - Desktop robots that follow your Boite agents, handle requests, and run scheduled missions.
 - [Cortisoff](https://github.com/klNuno/cortisoff) - Automate your desktop with Lua plugins for night light, per-app refresh rate, vibrance, and shortcuts.
+- [gammich](https://github.com/klNuno/gammich) - Browse, tag, and search your game clip recordings in a self-hosted web library.
 
 <br>
 
