@@ -1,8 +1,8 @@
 ### Projects
 
 - [accshift](https://github.com/klNuno/accshift) - Switch gaming accounts on Windows, macOS, and Linux.
-- [Boite](https://github.com/beboite/boite) - A desktop workspace for coding agents, with access from your phone. ([Legacy terminal app](https://github.com/beboite/boite-legacy))
-- [Douane](https://github.com/beboite/douane) - Use your AI subscriptions in any coding tool through one self-hosted gateway, with quota-aware routing.
+- [Boite](https://github.com/mtsu-dev/boite) - A desktop workspace for coding agents, with access from your phone. ([Legacy terminal app](https://github.com/beboite/boite-legacy))
+- [Douane](https://github.com/mtsu-dev/douane) - Use your AI subscriptions in any coding tool through one self-hosted gateway, with quota-aware routing.
 
 
 
@@ -10,12 +10,12 @@
 
 - [Spotivita](https://github.com/klNuno/spotivita) - Play Spotify on the PS Vita, with your library, search, artist pages, and Spotify Connect.
 - [Windows Bagarre](https://github.com/klNuno/windows-bagarre) - Debloat and tune a fresh Windows 11 install for gaming.
-- [fastpick](https://github.com/beboite/fastpick) - Pick your coding agent, provider, and model from the terminal (+ a roulette if you cannot decide).
+- [fastpick](https://github.com/mtsu-dev/fastpick) - Pick your coding agent, provider, and model from the terminal (+ a roulette if you cannot decide).
 - [fast-mcp-ssh](https://github.com/klNuno/fast-mcp-ssh) - SSH, SFTP, and remote screenshots for AI agents in one Rust binary.
 - [PriceHover](https://github.com/klNuno/PriceHover) - Convert currency and crypto prices on hover, on selection, or inline in Chrome and Firefox.
 - [AlarmeMeian](https://github.com/klNuno/AlarmeMeian) - Control a Meian alarm by SMS from Android.
 - [HEIC to JPG](https://github.com/klNuno/heic-jpg-converter) - Convert HEIC images to JPG.
-- [B.O.T.S](https://github.com/beboite/bots) - Desktop robots that follow your Boite agents, handle requests, and run scheduled missions.
+- [B.O.T.S](https://github.com/Skollheim/bots) - Desktop robots that follow your Boite agents, handle requests, and run scheduled missions.
 - [Cortisoff](https://github.com/klNuno/cortisoff) - Automate your desktop with Lua plugins for night light, per-app refresh rate, vibrance, and shortcuts.
 - [gammich](https://github.com/klNuno/gammich) - Browse, tag, and search your game clip recordings in a self-hosted web library.
 
