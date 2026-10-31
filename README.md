@@ -19,7 +19,6 @@ Studio: [MTSU](https://mtsu.dev).
 
 **Desktop and gaming**
 - [Windows Bagarre](https://github.com/klNuno/windows-bagarre) - Debloat and tune a fresh Windows 11 install for gaming.
-- [Cortisoff](https://github.com/klNuno/cortisoff) - Automate your desktop with Lua plugins: night light, per-app refresh rate, vibrance and shortcuts.
 - [gammich](https://github.com/klNuno/gammich) - Browse, tag and search your game clip recordings in a self-hosted web library.
 - [Spotivita](https://github.com/klNuno/spotivita) - Play Spotify on the PS Vita, with your library, search, artist pages and Spotify Connect.
 
