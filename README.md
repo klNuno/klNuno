@@ -4,7 +4,6 @@ Studio: [MTSU](https://mtsu.dev).
 
 - [**Boite**](https://github.com/mtsu-dev/boite) - Desktop workspace for coding agents, with access from your phone ([legacy terminal app](https://github.com/beboite/boite-legacy))
 - [**accshift**](https://github.com/klNuno/accshift) - Switch gaming accounts in one click on Windows, macOS and Linux
-- [**Douane**](https://github.com/mtsu-dev/douane) - Use your AI subscriptions in any coding tool through one self-hosted gateway, with quota-aware routing
 
 ### Games
 - [**Mining Miner**](https://store.steampowered.com/app/2303330/Mining_Miner/) - Incremental mining game on Steam, made with [Skollheim](https://github.com/Skollheim)
