@@ -9,7 +9,6 @@ Studio: [MTSU](https://mtsu.dev).
 - [**Mining Miner**](https://store.steampowered.com/app/2303330/Mining_Miner/) - Incremental mining game on Steam, made with [Skollheim](https://github.com/Skollheim)
 - [**Night Wash**](https://store.steampowered.com/app/5492690/Night_Wash_GE418NK/) - Night-shift horror game at a tunnel car wash, coming soon on Steam
 - [**My Empire MUST Grow**](https://store.steampowered.com/app/5114510/My_Empire_MUST_Grow/) - Incremental strategy game where a tiny village must become an empire, coming soon on Steam
-- ??? soon
 
 ### Small projects
 
@@ -27,7 +26,7 @@ Studio: [MTSU](https://mtsu.dev).
 - [PriceHover](https://github.com/klNuno/PriceHover) - Convert currency and crypto prices on hover, on selection or inline in Chrome and Firefox.
 
 **Other**
-- [lsd-decomp](https://github.com/klNuno/lsd-decomp) - Matching decompilation of LSD: Dream Emulator (PS1), in progress.
+- [lsd-decomp](https://github.com/klNuno/lsd-decomp) - Matching decompilation of LSD: Dream Emulator (PS1)
 
 <br>
 
